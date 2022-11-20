@@ -18,8 +18,7 @@ RUN \
     rm -rf /var/lib/apt/lists/* && \
     echo "**** install cavif ****" && \
     cd /home/openjdk && \
-    curl https://github.com/kornelski/cavif-rs/releases/download/v1.3.5/cavif_1.3.5_amd64.deb -O && \
-    ls -l  && \
+    curl -LO https://github.com/kornelski/cavif-rs/releases/download/v1.3.5/cavif_1.3.5_amd64.deb && \
     dpkg -i cavif_1.3.5_amd64.deb && \
     rm cavif_1.3.5_amd64.deb
 
