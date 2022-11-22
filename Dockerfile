@@ -7,8 +7,7 @@ RUN \
     apt-get update && \
     apt-get install -y --no-install-recommends \
                     curl \
-                    ca-certificates \
-                    cpulimit && \
+                    ca-certificates && \
     echo "**** create openjdk user and make our folders ****" && \
     mkdir /home/openjdk && \
     groupmod -g 1000 users && \
